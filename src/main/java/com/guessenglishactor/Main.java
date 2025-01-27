@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         IhttpRequest requestCreator = new DefaultHttpRequestCreator();
         IhttpClientExecutor clientExecutor = new DefaultHttpClientExecutor();
-        IAuthentication authenticationCode = new DefaultAuthentication("eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZjJhOWQzODcwODBjMzhkMjI0NmYwZDJiZGM5NTlhZCIsInN1YiI6IjY2NTRmYjYyOTIyN2YzM2E2ZmNkYjZiNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.seCIxdLuRv5fGregO6r-5nGYrP0INdkn3PrOwcTg1J0");
+        IAuthentication authenticationCode = new DefaultAuthentication("Enter auth code for https://api.themoviedb.org/3");
         
         GameLogic characterDataService = new GameLogic(requestCreator, clientExecutor, authenticationCode);
         Scanner PlayerResponse = new Scanner(System.in);
